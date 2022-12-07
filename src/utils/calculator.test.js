@@ -14,6 +14,14 @@ describe('#sum', () => {
   it('should return the same number if only one number is passed', () => {
     expect(sum([2])).toBe(2)
   })
+
+  it('should return 0 when no parameter is passed', () => {
+    expect(sum()).toBe(0)
+  })
+
+  it('should return 0 if the value passed is not an array', () => {
+    expect(sum(25)).toBe(0)
+  })
 })
 
 describe('#difference', () => {
